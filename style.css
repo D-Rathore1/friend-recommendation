@@ -1,61 +1,64 @@
 body {
-    background-color: #f0f2f5;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-card {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     border: none;
     margin-bottom: 20px;
-    border-radius: 15px;
+    border-radius: 18px;
 }
 
 .card {
     border: none;
-    border-radius: 12px;
+    border-radius: 14px;
     margin-bottom: 20px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
 }
 
 .card-header {
     border-bottom: none;
-    border-radius: 12px 12px 0 0 !important;
+    border-radius: 14px 14px 0 0 !important;
     padding: 1rem 1.5rem;
+    background-color: #4facfe;
+    color: white;
 }
 
 .card-body {
     padding: 1.5rem;
+    background-color: #fdfdfd;
 }
 
 .list-group-item {
     border: none;
-    background-color: #f8f9fa;
-    margin-bottom: 8px;
-    border-radius: 8px !important;
+    background-color: #f0f4f8;
+    margin-bottom: 10px;
+    border-radius: 10px !important;
     padding: 12px 20px;
     transition: all 0.3s ease;
 }
 
 .list-group-item:hover {
-    background-color: #e9ecef;
-    transform: translateX(5px);
+    background-color: #d9e8fc;
+    transform: translateX(8px);
 }
 
 .form-select {
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 12px;
-    border: 2px solid #e9ecef;
+    border: 2px solid #ccddee;
     transition: all 0.3s ease;
 }
 
 .form-select:focus {
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(79, 172, 254, 0.25);
+    border-color: #4facfe;
 }
 
 .common-friends-badge {
-    background-color: #198754;
+    background-color: #ff7eb3;
     color: white;
     padding: 6px 12px;
     border-radius: 20px;
@@ -72,7 +75,7 @@ body {
 
 .form-label {
     font-weight: 500;
-    color: #495057;
+    color: #333;
     margin-bottom: 8px;
 }
 
@@ -88,54 +91,60 @@ body {
 }
 
 .recommendation-list .list-group-item {
-    animation: slideIn 0.3s ease forwards;
+    animation: slideIn 0.4s ease forwards;
 }
 
 @media (max-width: 768px) {
     .container {
         padding: 10px;
     }
-    
+
     .card-body {
         padding: 1rem;
     }
 }
 
 .recommendation-card {
-    transition: transform 0.2s;
+    transition: transform 0.3s;
     margin-bottom: 20px;
+    background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+    color: #333;
 }
 
 .recommendation-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15) !important;
 }
 
 .interest-badge {
     margin: 2px;
     font-size: 0.8em;
-    transition: all 0.2s;
+    background-color: #ffe0ac;
+    border-radius: 12px;
+    padding: 4px 10px;
+    transition: all 0.3s;
 }
 
 .interest-badge:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    background-color: #ffc07f;
 }
 
 .profile-section {
-    background-color: #f8f9fa;
-    border-radius: 10px;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
     transition: all 0.3s;
 }
 
 .profile-section:hover {
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1) !important;
 }
 
 .recommendations-section {
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 20px;
 }
 
@@ -146,6 +155,7 @@ body {
 .common-interests {
     margin-top: 10px;
     font-size: 0.9em;
+    color: #4f4f4f;
 }
 
 .toast-notification {
@@ -153,4 +163,9 @@ body {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-} 
+    background-color: #4facfe;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
